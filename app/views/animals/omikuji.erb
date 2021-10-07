@@ -1,4 +1,6 @@
-<%= form_with(model: animal) do |form| %>
+<%= image_tag "seiza.png", width: "400" %>
+<h3 class="mt-2">あなたの星座は？</h3>
+<%= form_with url: seiza_path, method: "get" do |form| %>
   <div class="field">
     <%= form.collection_select :seiza, Seiza.all, :id, :name, {}, class: "form-select form-select-lg mt-4" %>
   </div>

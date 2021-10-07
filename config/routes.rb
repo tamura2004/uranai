@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :animals
+  get "/animals/omikuji", to: "animals#omikuji", as: "omikuji"
+  get "/animals/seiza", to: "animals#seiza", as: "seiza"
 
-  root "animals#new"
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root "animals#omikuji"
 end
