@@ -1,0 +1,9 @@
+<%= form_with(model: animal) do |form| %>
+  <div class="field">
+    <%= form.collection_select :seiza, Seiza.all, :id, :name, {}, class: "form-select form-select-lg mt-4" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "選ぶ", class: "btn btn-lg btn-primary mt-2" %>
+  </div>
+<% end %>

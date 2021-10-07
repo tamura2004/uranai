@@ -1,0 +1,2 @@
+class Seiza < ApplicationRecord
+end

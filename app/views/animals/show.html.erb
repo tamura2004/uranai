@@ -1,0 +1,11 @@
+<%= image_tag "animal_dance.png", width: "400" %>
+
+<h3>あなたにおすすめの動物は</h3>
+<div class="display-1">
+  <%= @animal.name %>
+</div>
+<h3>です！</h3>
+
+<div class="btn btn-primary">
+<%= link_to "戻る", new_animal_path, class: "btn btn-lg bth-primary", style: "color: inherit" %>
+</div>
